@@ -1,10 +1,23 @@
 .linear-gradient {
-    background: linear-gradient(
-        103.39deg,
-        rgba(33, 30, 31, 0.92) 16.9%,
-        rgba(34, 71, 147, 0.1472) 92.59%
-    );
+  background: linear-gradient(
+    103.39deg,
+    rgba(33, 30, 31, 0.92) 16.9%,
+    rgba(34, 71, 147, 0.1472) 92.59%
+  );
 }
 // .drop-shadow {
 //   box-shadow: 0px 0px 0px #d9d9d9;
 // }
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("/assets/fonts/metropolis.regular.woff2"),
+    /* WOFF2 format */ url("/assets/fonts/metropolis.regular.woff");
+}
+body {
+  font-family: "Metropolis", sans-serif;
+}
