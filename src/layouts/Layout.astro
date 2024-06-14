@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
 import "../scss/custom.scss";
 ---
@@ -32,5 +33,6 @@ import "../scss/custom.scss";
     <div class="bg-[#0C5396] w-full h-[50px]"></div>
     <Nav />
     <slot />
+    <Footer />
   </body>
 </html>
