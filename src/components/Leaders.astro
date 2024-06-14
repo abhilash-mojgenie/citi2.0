@@ -4,11 +4,13 @@ import LeadersCard from "./small-components/LeadersCard.astro";
 import SubHeading from "./small-components/SubHeading.astro";
 ---
 
-<div class="bg-[#F9F9F9] px-[82px] pt-[85px] pb-[100px]">
+<div class="bg-[#F9F9F9] p-[40px] xl:px-[82px] xl:pt-[85px] xl:pb-[100px]">
   <SubHeading title="Our" span="Leaders" />
 
   <div>
-    <div class="flex gap-[29px] mb-[100px]">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-[100px] md:gap-y-[145px] md:gap-x-[29px] mb-[100px]"
+    >
       <LeadersCard
         name="Dr. Debasish Gupta"
         src="/assets/images/png/avatar-1.png"
@@ -24,12 +26,27 @@ import SubHeading from "./small-components/SubHeading.astro";
         src="/assets/images/png/avatar-3.png"
         pos="Organizing Chairperson"
       />
+      <LeadersCard
+        name="Dr. Debasish Gupta"
+        src="/assets/images/png/avatar-4.png"
+        pos="Organizing Chairperson"
+      />
+      <LeadersCard
+        name="Dr. Debasish Gupta"
+        src="/assets/images/png/avatar-5.png"
+        pos="Organizing Chairperson"
+      />
+      <LeadersCard
+        name="Dr. Debasish Gupta"
+        src="/assets/images/png/avatar-6.png"
+        pos="Organizing Chairperson"
+      />
     </div>
     <div class="flex justify-center">
       <button
-        class="bg-[#30FFA8] px-[122px] rounded-[50px] py-[19px] mt-[60px]"
+        class="bg-[#30FFA8] px-[90px] xl:px-[122px] rounded-[50px] py-[19px] mt-[60px]"
       >
-        <p class="text-[20px] font-light">Read More</p>
+        <p class="xl:text-[20px] font-light">Read More</p>
       </button>
     </div>
   </div>
