@@ -7,26 +7,30 @@ const { title, desc, src } = Astro.props;
     <img
       src={src}
       alt=""
-      class="h-[345px] w-[407px] rounded-[15px] object-cover"
+      class="h-[250px] w-[350px] xl:h-[345px] xl:w-[407px] rounded-[15px] object-cover"
     />
     <div
-      class="bg-white absolute top-[140px] max-w-[326px] max-h-[350px] left-0"
+      class="bg-white absolute top-[170px] md:top-[140px] max-w-[260px] xl:max-w-[326px] max-h-[350px] left-0"
     >
       <div class="pl-[19px] pr-[20px]">
         <p
-          class="text-[#0C5396] font-medium pt-[25px] pb-[22px] text-[26px] max-w-[251px]"
+          class="text-[#0C5396] font-medium pt-[25px] pb-[22px] md:text-[20px] xl:text-[26px] max-w-[251px]"
         >
           {title}
         </p>
-        <p class="text-[18px] font-light">
+        <p class="text-[15px] xl:text-[18px] font-light">
           {desc}
         </p>
       </div>
     </div>
   </div>
-  <div class="flex justify-center">
-    <button class="bg-[#30FFA8] px-[122px] rounded-[50px] py-[19px] mt-[170px]">
-      <p class="text-[20px] font-light">Read More</p>
+  <div class="flex">
+    <button
+      class="bg-[#30FFA8] px-[70px] xl:px-[122px] w-full rounded-[50px] py-[19px] mt-[190px] xl:mt-[170px]"
+    >
+      <p class="xl:text-[24px] text-[14px] md:text-[18px] font-light">
+        Read More
+      </p>
     </button>
   </div>
 </div>

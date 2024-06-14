@@ -3,10 +3,12 @@ import InitiativeCard from "./small-components/InitiativeCard.astro";
 import SubHeading from "./small-components/SubHeading.astro";
 ---
 
-<div class="pl-[82px] pr-[79px]">
+<div class="px-[40px] xl:pl-[82px] xl:pr-[79px]">
   <SubHeading title="Our " span="Initiatives" />
 
-  <div class="flex gap-[29px] mb-[100px]">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] md:gap-[40px] xl:gap-[29px] mb-[100px]"
+  >
     <InitiativeCard
       title="Kerala Technology Expo 2024"
       src="/assets/images/png/ktx-1.png"
