@@ -1,27 +1,36 @@
 ---
 import Card from "./small-components/Card.astro";
-import InitiativeCard from "./small-components/InitiativeCard.astro";
+import LeadersCard from "./small-components/LeadersCard.astro";
 import SubHeading from "./small-components/SubHeading.astro";
 ---
 
 <div class="bg-[#F9F9F9] px-[82px] pt-[85px] pb-[100px]">
   <SubHeading title="Our" span="Leaders" />
 
-  <div class="flex gap-[29px] mb-[100px]">
-    <InitiativeCard
-      title="Kerala Technology Expo 2024"
-      src="/assets/images/png/avatar-1.png"
-      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud elit, sed do eiusmod tempor incididunt ut labore"
-    />
-    <InitiativeCard
-      title="Kerala Technology Expo 2024"
-      src="/assets/images/png/ktx-2.png"
-      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud elit, sed do eiusmod tempor incididunt ut labore"
-    />
-    <InitiativeCard
-      title="Kerala Technology Expo 2024"
-      src="/assets/images/png/ktx-3.png"
-      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud elit, sed do eiusmod tempor incididunt ut labore"
-    />
+  <div>
+    <div class="flex gap-[29px] mb-[100px]">
+      <LeadersCard
+        name="Dr. Debasish Gupta"
+        src="/assets/images/png/avatar-1.png"
+        pos="Organizing Chairperson"
+      />
+      <LeadersCard
+        name="Dr. Debasish Gupta"
+        src="/assets/images/png/avatar-2.png"
+        pos="Organizing Chairperson"
+      />
+      <LeadersCard
+        name="Dr. Debasish Gupta"
+        src="/assets/images/png/avatar-3.png"
+        pos="Organizing Chairperson"
+      />
+    </div>
+    <div class="flex justify-center">
+      <button
+        class="bg-[#30FFA8] px-[122px] rounded-[50px] py-[19px] mt-[60px]"
+      >
+        <p class="text-[20px] font-light">Read More</p>
+      </button>
+    </div>
   </div>
 </div>

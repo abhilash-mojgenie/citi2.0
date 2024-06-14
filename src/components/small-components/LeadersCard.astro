@@ -1,0 +1,25 @@
+---
+const { name, pos, src } = Astro.props;
+---
+
+<div class="flex flex-col">
+  <div class="relative">
+    <img
+      src={src}
+      alt=""
+      class="h-[345px] w-[407px] rounded-[15px] object-cover"
+    />
+    <div
+      class="bg-white absolute top-[273px] max-w-[326px] max-h-[350px] left-0"
+    >
+      <div class="px-[42px] py-[44px]">
+        <p class="text-[26px] max-w-[241px]">
+          {name}
+        </p>
+        <p class="text-[22px] font-light">
+          {pos}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
