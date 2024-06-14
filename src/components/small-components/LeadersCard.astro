@@ -3,23 +3,27 @@ const { name, pos, src } = Astro.props;
 ---
 
 <div class="flex flex-col">
-  <div class="relative">
-    <img
-      src={src}
-      alt=""
-      class="h-[250px] w-[350px] xl:h-[345px] xl:w-[407px] 2xl:w-full 2xl:h-[390px] rounded-[15px] object-cover"
-    />
-    <div
-      class="bg-white absolute top-[170px] xl:top-[273px] max-w-[260px] xl:max-w-[326px] max-h-[350px] left-0 z-10"
-    >
-      <div class="px-[20px] py-[40px] xl:px-[42px] xl:py-[44px]">
-        <p class="xl:text-[26px] text-[19px] max-w-[241px]">
-          {name}
-        </p>
-        <p class="xl:text-[22px] text-[19px] font-light">
-          {pos}
-        </p>
-      </div>
+    <div class="relative">
+        <img
+            src={src}
+            alt=""
+            class="h-[250px] w-[350px] xl:h-[345px] xl:w-[407px] 2xl:w-full 2xl:h-[390px] rounded-[15px] object-cover"
+        />
+        <div
+            class="bg-white absolute top-[170px] xl:top-[273px] max-w-[260px] xl:max-w-[326px] max-h-[350px] left-0 z-10"
+        >
+            <div class="px-[20px] py-[40px] xl:px-[42px] xl:py-[44px]">
+                <p
+                    class="xl:text-[28px] text-[19px] max-w-[241px] font-semibold whitespace-nowrap"
+                >
+                    {name}
+                </p>
+                <p
+                    class="xl:text-[22px] text-[19px] font-light whitespace-nowrap"
+                >
+                    {pos}
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
