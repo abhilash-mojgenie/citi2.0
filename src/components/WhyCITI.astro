@@ -1,0 +1,51 @@
+---
+import Card from "./small-components/Card.astro";
+import SubHeading from "./small-components/SubHeading.astro";
+---
+
+<div class="relative mt-[30px]">
+  <div class="w-full absolute top-0
+bg">
+    <img src="/assets/images/png/circute-1.png" alt="" />
+  </div>
+  <div class="pl-[82px] relative z-10">
+    <div class="flex justify-between gap-[50px] items-center">
+      <div class="max-w-[634px] pt-[67px]">
+        <SubHeading title="Why" span="CITI2.0" />
+        <p class="text-[28px] leading-[42px] mb-[35px]">
+          CITI 2.0 embodies a visionary collaboration between nine key
+          stakeholders and influential organizations, uniting their expertise
+          and resources to chart a transformative course for Kozhikode.
+        </p>
+        <p class="text-[22px] font-light leading-[34px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="h-[674] w-[674] rounded-full pt-[15px]">
+        <img
+          src="/assets/images/png/why-citi-image.png"
+          alt=""
+          class="h-[674] w-[674] rounded-full"
+        />
+      </div>
+    </div>
+    <div class="mt-[70px] flex justify-between pr-[80px] gap-[28px] mb-[100px]">
+      <Card
+        title="Our Mission"
+        src="/assets/images/svg/mission.svg"
+        bg="bg-[#0C5396]"
+      />
+      <Card
+        title="Our Objective"
+        src="/assets/images/svg/objective.svg"
+        bg="bg-[#00A498]"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+---
+const { title, desc, src } = Astro.props;
+---
+
+<div class="flex flex-col">
+  <div class="relative">
+    <img
+      src={src}
+      alt=""
+      class="h-[345px] w-[407px] rounded-[15px] object-cover"
+    />
+    <div
+      class="bg-white absolute top-[140px] max-w-[326px] max-h-[350px] left-0"
+    >
+      <div class="pl-[19px] pr-[20px]">
+        <p
+          class="text-[#0C5396] font-medium pt-[25px] pb-[22px] text-[26px] max-w-[251px]"
+        >
+          {title}
+        </p>
+        <p class="text-[18px] font-light">
+          {desc}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <button class="bg-[#30FFA8] px-[132px] rounded-[50px] py-[19px] mt-[170px]">
+      <p class="text-[20px] font-light">Read More</p>
+    </button>
+  </div>
+</div>
